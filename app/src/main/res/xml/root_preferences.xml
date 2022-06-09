@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/sEngine_entries"
+            app:entryValues="@array/reply_values"
+            app:key="sEngine"
+            app:title="Основна пошукова система"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="themeSwitch"
+            app:title="Темна тема" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <EditTextPreference
+            app:key="tldBAN"
+            app:title="Введіть ім`я домену для блокування"
+            />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
